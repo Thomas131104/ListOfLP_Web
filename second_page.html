@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url(image.jpg);
+            background-size: cover;
+        }
+
+        h3 {
+            color: coral;
+            text-align: center;
+        }
+
+        .language-form
+        {
+            position: absolute;
+            top: 50%; left: 50%;
+        }
+
+        .language {
+            font-size: 30px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .class1 {
+            background-color: wheat;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .class2a {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .class2b {
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 4px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            min-height: 200px;
+            min-width: 300px;
+            font-family: monospace;
+            overflow: auto;
+        }
+
+        #code-container pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h3>Lựa chọn ngôn ngữ lập trình trong danh sách</h3>
+
+    <form id="language-form">
+        <select id="languages" name="languages">
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="cs">C#</option>
+            <option value="batch">Batch</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+
+        <!-- Chú ý thêm type="button" để ngăn form tự động gửi -->
+        <button type="button" id="submit-btn">Submit</button>
+    </form>
+
+    <div class="class1">
+        <div class="class2a">
+            <p><b>'Hello world' tương ứng</b></p>
+        </div>
+
+        <div class="class2b" id="code-container">
+            <!-- Mã sẽ hiển thị tại đây -->
+        </div>
+    </div>
+
+    <!-- Link tới file JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
